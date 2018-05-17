@@ -1,0 +1,24 @@
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>聊天页面</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+
+</ion-content>
+
+<ion-footer>
+  <ion-toolbar>
+    <ul class="action-bar">
+      <li class="action-pic">图片</li>
+      <li class="action-textarea">
+        <ion-textarea class="chat-textarea" [(ngModel)]="msg" autoresize placeholder="输入框"></ion-textarea>
+      </li>
+      <li class="action-send" (click)="$event.preventDefault();sendMsg($event)">发送</li>
+    </ul>
+  </ion-toolbar>
+</ion-footer>

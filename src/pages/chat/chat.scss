@@ -1,0 +1,36 @@
+page-chat {
+  .action-bar {
+    display: flex;
+    margin: 0;
+    padding: 0;
+    li {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    li.action-pic {
+      width: 15%;
+    }
+    li.action-textarea {
+      width: 70%;
+    }
+    li.action-send {
+      width: 15%;
+    }
+  }
+  .chat-textarea {
+    textarea {
+        background: #fff;
+        border: solid 1px #ddd; // padding: 0px !important;
+        padding: 9px 8px 9px 8px !important;
+        font-size: 16px !important;
+        line-height: 18px !important;
+        font-family: verdana !important;
+        border-radius: 5px;
+        overflow: hidden;
+        margin: 0;
+        width: 100%;
+        height: 36px;
+    }
+  }
+}
