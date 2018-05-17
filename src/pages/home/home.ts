@@ -81,4 +81,12 @@ export class HomePage {
       );
   }
 
+  callPhone(){
+    var sApp = (window as any).startApp.set({
+      "action": "ACTION_CALL",
+      "uri": "tel:+15100000000"
+    });
+    sApp.start();
+  }
+
 }
