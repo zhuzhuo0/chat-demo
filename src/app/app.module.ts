@@ -13,6 +13,7 @@ import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
 import { AppAvailability } from '@ionic-native/app-availability';
 import { ChatPage } from '../pages/chat/chat';
+import { ServiceModule } from '../services/service.module';
 
 @NgModule({
   declarations: [
@@ -28,7 +29,8 @@ import { ChatPage } from '../pages/chat/chat';
     IonicModule.forRoot(MyApp, {
       tabsHideOnSubPages: 'true'
     }),
-    DirectivesModule
+    DirectivesModule,
+    ServiceModule
   ],
   bootstrap: [IonicApp],
   entryComponents: [
