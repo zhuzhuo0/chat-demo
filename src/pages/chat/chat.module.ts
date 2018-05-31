@@ -5,11 +5,11 @@ import { ChatPage } from './chat';
 
 @NgModule({
   declarations: [
-    ChatPage,
-    DirectivesModule
+    ChatPage
   ],
   imports: [
     IonicPageModule.forChild(ChatPage),
+    DirectivesModule
   ],
 })
 export class ChatPageModule { }
